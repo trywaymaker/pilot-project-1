@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BUTCHER" />
+    <title>BUTCHER</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css ">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+</head>
+<body>
+    <header class="nav">
+        <img class="logo" data-src="./assets/img/butcher_logo.webp" width="200" alt="logo" decoding="async" src="./assets/img/butcher_logo.png" data-loaded="true">
+        <i class="fa-solid fa-bars nav_burger" onclick="navmenu()"></i>
+        <nav class="nav_menu" id="navMenu">
+            <a class="nav_list" href="#">HOME</a>
+            <a class="nav_list" href="#">ABOUT US</a>
+            <a class="nav_list" href="#">AIR CONDITIONING</a>
+            <a class="nav_list" href="#">HEATING</a>
+            <a class="nav_list" href="#">FINANCING</a>
+            <a class="nav_list" href="#">CAREERS</a>
+            <a class="nav_list" href="#">CONTACT</a>
+        </nav>
+    </header>
+    <nav class="contact">
+        <div class="contact_menu">
+            <a class="contact_list list1" href="tell:+(337)2433376"><span><i class="fa-solid fa-square-phone"></i> Call 24/7 </span>+(337)2433376</a>
+            <a class="contact_list list2" href="#">FREE QUOTE</a>
+            <a class="contact_list list3" href="#">Online Bill Pay</a>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <video autoplay loop muted >
+            <source srcset="./assets/videos/butcher_video.mp4" src="./assets/videos/butcher_video.mp4" type="video/mp4">
+        </video>
+        <div class="hero_overlay">
+            <div class="hero_content hero_box">
+                <div class="hero_textbox">
+                    <h1 class="hero_text">“Serving Acadiana Since 1949”</h1>
+                    <div class="hero_textbox2">
+                        <h1><span></span>AC Repair</h1>
+                        <h3>24/7 Emergency Support</h3>
+                        <a href="tell:(337)2433376"><h1><span><i class="fa-solid fa-square-phone"></i></span> (337) 243.3376</h1></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero_content2 hero_box">
+                <div class="hero_textbox3">
+                    <h1>0%</h1>
+                    <h3>APR FINANCING<br>
+                        FOR 60 MONTHS</h3>
+                    <h4>OR</h4>
+                    <h1>$1200</h1>
+                    <h3>INSTANT<br>
+                        REBATE</h3>
+                    <hr>
+                    <p>LEARN MORE</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <section class="services">
+        <div class="service_box"></div>
+        <div class="services_in">
+            <div class="services_card">
+                <img class="logo" data-src="./assets/img/ac_repair.webp" width="400" alt="AC Repair" decoding="async" src="./assets/img/ac_repair.png" data-loaded="true">
+                <h4>AC Repair</h4>
+            </div>
+            <div class="services_card">
+                <img class="logo" data-src="./assets/img/insulation.webp" width="400" alt="logo" decoding="async" src="./assets/img/insulation.png" data-loaded="true">
+                <h4>Insulation</h4>
+            </div>
+            <div class="services_card">
+                <img class="logo" data-src="./assets/img/maintenance_agreement.webp" width="400" alt="logo" decoding="async" src="./assets/img/maintenance_agreement.png" data-loaded="true">
+                <h4>Maintenance Agreement</h4>
+            </div>
+        </div>
+    </section>
+    
+    <section class="aboutus">
+        <div class="aboutus_in">
+            <div class="aboutus_img">
+                <img data-src="./assets/img/aboutus.webp" width="800" alt="About Us" decoding="async" src="./assets/img/aboutus.png" data-loaded="true">
+            </div>
+            <div class="aboutus_cards">
+                <div class="aboutus_card1">
+                    <h1>About Us</h1>
+                    <p><span><strong>Butcher Air Conditioning is the #1 Trane Dealer in Louisiana</strong></span> and has been catering to Acadiana and the surrounding area for over 74 Years. We are dedicated to providing superior Air Conditioning Service & Heating Service, Air Conditioner & Heater Repair, Preventative Maintenance, Central Air Conditioning & Heating, HVAC replacements, Generators, Air Purifiers, Duct Work replacement, Foam Insulation and Fiber Insulation.</p>                    
+                </div>
+                <div class="aboutus_card2">
+                    <img class="logo" data-src="./assets/img/butcher_logo.webp" width="200" alt="logo" decoding="async" src="./assets/img/butcher_logo.webp" data-loaded="true">
+                    <h4>Watch our<br>latest commercial ></h4>
+                </div>
+                <img class="aboutus_tv" data-src="./assets/img/aboutustv.webp" width="300" alt="About us" decoding="async" src="./assets/img/aboutustv.webp" data-loaded="true">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="review">
+        <h1 class="review_title">CUSTOMER REVIEWS</h1>
+        <div #swiperRef="" class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="rating-area">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <p class="description">"“Butcher AC to the rescue!!! Thank goodness for such professional service! Our heat has been out all night. I had a plumber out last week and apparently, he turned off all the gas to our units.""</p>
+                                <h5 class="name">Erin F</h5>
+                                <p class="description">Lafayette</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="rating-area">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <p class="description">"“Butcher AC to the rescue!!! Thank goodness for such professional service! Our heat has been out all night. I had a plumber out last week and apparently, he turned off all the gas to our units.""</p>
+                                <h5 class="name">Erin F</h5>
+                                <p class="description">Lafayette</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="rating-area">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <p class="description">"“Butcher AC to the rescue!!! Thank goodness for such professional service! Our heat has been out all night. I had a plumber out last week and apparently, he turned off all the gas to our units.""</p>
+                                <h5 class="name">Erin F</h5>
+                                <p class="description">Lafayette</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="rating-area">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <p class="description">"“Butcher AC to the rescue!!! Thank goodness for such professional service! Our heat has been out all night. I had a plumber out last week and apparently, he turned off all the gas to our units.""</p>
+                                <h5 class="name">Erin F</h5>
+                                <p class="description">Lafayette</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="rating-area">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <p class="description">"“Butcher AC to the rescue!!! Thank goodness for such professional service! Our heat has been out all night. I had a plumber out last week and apparently, he turned off all the gas to our units.""</p>
+                                <h5 class="name">Erin F</h5>
+                                <p class="description">Lafayette</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="rating-area">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <p class="description">"“Butcher AC to the rescue!!! Thank goodness for such professional service! Our heat has been out all night. I had a plumber out last week and apparently, he turned off all the gas to our units.""</p>
+                                <h5 class="name">Erin F</h5>
+                                <p class="description">Lafayette</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    
+    <section class="community">
+        <h1 class="community_title">BUTCHER IN THE COMMUNITY</h1>
+        <div class="community_in">
+            <div class="community_img">
+                <img data-src="./assets/img/community.webp" width="600" alt="About Us" decoding="async" src="./assets/img/community.png" data-loaded="true">
+            </div>
+            <div class="community_card1">
+                <p><strong>Butcher Air Conditioning</strong> has supported the Acadiana area for over 75 years, and we continue to do so.</p>
+                <img class="community_tv" data-src="./assets/img/community_car.webp" width="450" height="400" alt="About us" decoding="async" src="./assets/img/community_car.png" data-loaded="true">
+            </div>
+            <div class="community_card2">
+                <p class="community_p1 community_text">VISIT OUR <br>PHOTO GALLERY</p>
+                <p class="community_p2 community_text">VISIT OUR <br>HISTORY PAGE</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="servicearea">
+        <div class="servicearea_title">
+            <h1>BUTCHER AC SERVICE AREA</h1><br>
+            <p>Main service areas in Louisiana include:</p>
+        </div>
+        <div class="servicearea_in">
+            <div class="servicearea_img">
+                <h4 class="servicearea_title2">LOUISIANA</h4>
+                <img data-src="./assets/img/louisiana.webp" width="600" alt="About Us" decoding="async" src="./assets/img/louisiana.png" data-loaded="true">
+            </div>
+            <div class="servicearea_card">
+                <ul class="servicearea_list">
+                    <li>Abbeville, LA</li>
+                    <li>Breaux Bridge, LA</li>
+                    <li>Carencro, LA</li>
+                    <li>Eunice, LA</li>
+                    <li>Jefferson Island, LA</li>
+                    <li>New Iberia, LA</li>
+                    <li>Rayne, LA</li>
+                    <li>Ville Platte, LA</li>
+                </ul>
+                <ul class="servicearea_list">
+                    <li>Arnaudville, LA</li>
+                    <li>Broussard, LA</li>
+                    <li>Delcambre, LA</li>
+                    <li>Indian Bayou, LA</li>
+                    <li>Lafayette, LA</li>
+                    <li>Opelousas, LA</li>
+                    <li>Scott, LA</li>
+                    <li>Youngsville, LA</li>
+                </ul>
+                <ul class="servicearea_list">
+                    <li>Avery Island, LA</li>
+                    <li>Cade, LA</li>
+                    <li>Duson, LA</li>
+                    <li>Jeanerette, LA</li>
+                    <li>Maurice, LA</li>
+                    <li>Port Barre, LA</li>
+                    <li>St. Martinville, LA</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicebrief">
+        <div class="servicebrief_in">
+            <div class="servicebrief_card">
+                <img class="logo" data-src="./assets/img/ac_repair_1.webp" width="500" alt="AC Repair" decoding="async" src="./assets/img/ac_repair_1.webp" data-loaded="true">
+                <div class="servicebrief_content">
+                    <h4>AC Repair</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis.</p>
+                    <input class="btn" type="button" value="Know More">
+                </div>
+            </div>
+            <div class="servicebrief_card">
+                <div class="servicebrief_content">
+                    <h4>Insulation</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis.</p>
+                    <input class="btn" type="button" value="Know More">
+                </div>
+                <img class="logo" data-src="./assets/img/insulation_2.webp" width="400" alt="logo" decoding="async" src="./assets/img/insulation_2.webp" data-loaded="true">
+            </div>
+            <div class="servicebrief_card">
+                <img class="logo" data-src="./assets/img/maintenanceagr.webp" width="400" alt="logo" decoding="async" src="./assets/img/maintenanceagr.webp" data-loaded="true">
+                <div class="servicebrief_content">
+                    <h4>Maintenance Agreement</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis.</p>
+                    <input class="btn" type="button" value="Know More">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <nav class="footer_contact">
+            <div class="footer_contact_menu">
+                <a class="footer_contact_list list1" href="tell:+(337)2433376"><span><i class="fa-solid fa-square-phone"></i> Call 24/7 </span>+(337)2433376</a>
+                <a class="footer_contact_list list2" href="#">FREE QUOTE</a>
+                <a class="footer_contact_list list3" href="#">Online Bill Pay</a>
+            </div>
+        </nav>
+        <div class="footer_in">
+            <div class="footer_card">
+                <img class="footer_brandlogo" data-src="./assets/img/butcher_logo.webp" width="200" alt="AC Repair" decoding="async" src="./assets/img/butcher_logo.png" data-loaded="true">
+                <hr>
+                <div class="footer_logos">
+                    <img class="logo" data-src="./assets/img/logo_1.webp" width="100" height="40" alt="AC Repair" decoding="async" src="./assets/img/logo_1.webp" data-loaded="true">
+                    <img class="logo" data-src="./assets/img/logo_2.webp" width="50" height="60" alt="AC Repair" decoding="async" src="./assets/img/logo_2.webp" data-loaded="true">
+                    <img class="logo" data-src="./assets/img/logo_3.webp" width="100" height="40" alt="AC Repair" decoding="async" src="./assets/img/logo_3.webp" data-loaded="true">
+                </div>
+            </div>
+            <div class="footer_card2">
+                <h4>“Serving Acadiana<br>Since 1949”</h4>
+                <img class="logo" data-src="./assets/img/footer_car.webp" width="700" alt="logo" decoding="async" src="./assets/img/footer_car.webp" data-loaded="true">
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+<!-- Javascript -->
+    <script src="./assets/script/script.js"></script>
+<!-- font awsome -->
+    <script src="https://kit.fontawesome.com/f9a681a093.js" crossorigin="anonymous"></script>
+<!-- swiper js -->
+    <script src="./assets/script/swiper-bundle.min.js"></script>
+</html>
