@@ -26,7 +26,7 @@
     padding: .5rem 1rem;
     background: var(--secondary__color);
     color: var(--tertiary__color);
-    margin: 20px auto;
+    margin: 20px 0 0;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
     transition: all .3s ease;
@@ -144,7 +144,8 @@ body {
 }
 
 .contact .contact_list {
-    padding: 10px 30px;
+    padding: 10px 40px;
+    font-size: 19px;
 }
 
 .contact a {
@@ -155,6 +156,9 @@ body {
 .contact .list1 {
     background: var(--secondary__color);
     border-radius: 0 0 0 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .contact .list2 {
     background: var(--primary__color);
@@ -213,9 +217,8 @@ video {
     display: flex;
     z-index: 0;
 }
-.hero .hero_overlay {
+.hero_overlay {
     display: flex;
-    flex-wrap: wrap;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -246,7 +249,7 @@ video {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: var(--secondary__color);
+    background: #263461b3;
     border-radius: 0 50px 50px 0;
     color: var(--tertiary__color);
     padding: 20px 100px 20px;
@@ -255,6 +258,10 @@ video {
 .hero_textbox2 a{
     text-decoration: none;
     color: var(--tertiary__color);
+}
+.hero_number {
+    display: flex;
+    align-items: center;
 }
 
 .hero_content2 {
@@ -287,8 +294,10 @@ video {
     font-size: 40px;
     color: var(--primary__color);
 }
-.hero_textbox3 h4{
-    font-size: 30px;
+.hero_textbox3 h3 span{
+    color: var(--secondary__color);
+}
+.hero_textbox3 .OR{
     color: var(--quinary__color);
 }
 .hero_textbox3 hr{
@@ -296,15 +305,26 @@ video {
     border: 2px solid var(--tertiary__color);
     margin: 10px 0;
 }
-.hero_textbox3 p{
-    /* font-size: 30px; */
+.hero_textbox3 a{
+    text-decoration: none;
     color: var(--primary__color);
+    padding: 0;
+    background: none;
+    font-size: 16px;
+    border: none;
+    margin: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
 }
 
 @media screen and (max-width: 600px) {
     .hero {
         width: 100%;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
     }
     video {
         width: 100%;
@@ -312,9 +332,49 @@ video {
         padding: 0;
         margin: 0;
     }
+    .hero_overlay {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero_content {
+        display: none;
+        position: relative;
+    }
+    .hero_content2 {
+        width: 100%;
+        display: flex;
+        position: relative;
+        background: url(../img/hero_bg_mobile.webp) top 5px left 0 no-repeat !important;
+        background-size: 390px !important;
+        text-align: center;
+    }
+    .hero_textbox3 {
+        width: 100%;
+        margin: 50px 0;
+        align-items: center;
+    }
+    .hero_textbox3 h1{
+        font-size: 70px;
+    }
+    .hero_textbox3 h3{
+        font-size: 27px;
+    }
+    .hero_textbox3 hr{
+        display: none;
+    }
+    .hero_textbox3 a{
+        padding: 10px;
+        background: var(--primary__color);
+        color: var(--tertiary__color);
+        font-size: 16px;
+        margin: 20px 0 0;
+        border-radius: 10px;
+        width: 200px;
+    }
 }
 
-/* services */
+/* <-- -------------------------- services --> */
 
 .services {
     display: flex;
@@ -346,16 +406,30 @@ video {
     border-radius: 20px;
     text-align: center;
 }
+.services_card img{
+    width: 100%;
+    max-width: 400px;
+  }
 .services_card h4{
     padding: 20px;
     color: var(--tertiary__color);
 }
 
 @media screen and (max-width: 600px) {
+    .services_in {
+        gap: 10px;
+        position: relative;
+    }
+    .service_box {
+        height: 50px;
+    }
     .services_card img{
       width: 100%;
+      max-width: 300px;
     }
 }
+
+/* <--------------------------- About us --> */
 
 .aboutus {
     display: flex;
@@ -380,6 +454,15 @@ video {
 .aboutus_img img {
     width: 45%;
 }
+.aboutus_tv_mobile {
+    display: none;
+}
+.aboutus_img .aboutus_overimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .aboutus_cards {
     display: flex;
     flex-direction: column;
@@ -394,7 +477,7 @@ video {
     position: relative;
     background: var(--septenary__color);
     padding: 20px 100px 20px 120px;
-    margin: 80px 0 0 500px;
+    margin: 80px 0 0 540px;
 }
 .aboutus_card1 h1 {
     font-family: var(--secondary__font);
@@ -402,33 +485,81 @@ video {
 }
 .aboutus_card1 p {
     font-family: var(--primary__font);
+    font-size: 15px;
     line-height: 20px;
     margin-bottom: 10px;
 }
 .aboutus_card2 {
     display: flex;
     flex-direction: column;
-    position: relative;
-}
-.aboutus_card2 img{
-    margin: 40px 0 10px 620px;
+    margin: 100px 0 10px 0px;
 }
 .aboutus_card2 h4{
-    background: var(--primary__color);
     color: var(--tertiary__color);
     padding: 20px 100px 20px 120px;
-    margin: 0 0 0 500px;
+    margin: 0 0 0 540px;
     width: 50%;
+    font-size: 28px;
+    font-family: var(--secondary__font);
 }
 .aboutus_tv {
     position: absolute;
-    right: 150px;
-    bottom: -70px;
+    right: 120px;
+    bottom: -80px;
     float: right;
+    z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutus {
+        margin: 100px 0 50px 0;
+    }
+    .aboutus_img {
+        position: relative;
+        display: none;
+    }
+    .aboutus_cards {
+        width: 100%;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .aboutus_card1 {
+        padding: 20px;
+        margin: 0;
+    }
+    .aboutus_card2 {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .aboutus_card2 h4{
+        background: var(--primary__color);
+        color: var(--tertiary__color);
+        padding: 20px 20px 40px 20px;
+        margin: 0;
+        font-size: 28px;
+        font-family: var(--secondary__font);
+        width: 100%;
+        text-align: center;
+    }
+    .aboutus_tv_mobile {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+    }
+    .aboutus_tv {
+        display: none;
+    }
 
 }
 
-/* CUSTOMER REVIEWS */
+
+
+/* <----------------------CUSTOMER REVIEWS ----> */
 
 .review {
     margin-top: 200px;
@@ -497,13 +628,22 @@ video {
     margin-top: 20px;
 }
 
-/* community */
+/* <-- -------------------- BUTCHER IN THE COMMUNITY --> */
 
 .community {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
+}
+.community_title {
+    font-size: 35px;
+    padding: 20px;
+    text-align: center;
+    background: var(--primary__color);
+    color: var(--tertiary__color);
+    font-size: 35px;
+    font-family: var(--secondary__font);
 }
 .community_in {
     display: flex;
@@ -512,62 +652,75 @@ video {
     width: 100%;
     position: relative;
 }
-.community_title {
-    font-size: 3em;
-    padding: 20px;
-    text-align: center;
-    background: var(--primary__color);
-    color: var(--tertiary__color);
-    font-size: 35px;
-}
 .community_img {
     margin: 20px 0;
     position: relative;
-}
-.community_card1 {
-    background: var(--octonary__color);
-    max-width: 400px;
-    width: 100%;
-    position: relative;
-    padding: 20px;
-    border-radius: 20px 0 0 20px;
-}
-.community_card1 p {
-    max-width: 110px;
-    width: 100%;
-    font-size: 14px;
-}
-.community_tv {
-    height: auto;
-}
-.community_card2 {
-    position: absolute;
-    align-items: center;
-    justify-content: center;
     display: flex;
-    flex-direction: column;
-    gap: 50px;
-    margin-left: 255px;
-    z-index: -1;
+    justify-content: space-between;
+    align-items: center;
 }
-.community_text {
-    background: var(--primary__color);
-    color: var(--tertiary__color);
-    padding: 20px 20px 20px 20px;
-    font-size: 21px;
-    line-height: 25px;
-    width: 300px;
+.community_img img {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
 }
-.community_p1 {
-    border-radius: 0 20px 20px 0;
-    margin-left: 20px;
+.community_img1 {
+    margin-left: -120px;
 }
-.community_p2 {
-    border-radius: 20px 0 0 20px;
-    margin-left: 560px;
+.community_img2 {
+    position: absolute;
+    top: 0;
+    right: 120px;
+    margin-right: 50px;
+}
+.community_img0 {
+    display: none;
+}
+.community_img3 {
+    display: none;
+}
+.community_img4 {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .community {
+        background: var(--octonary__color);
+    }
+    .community_title {
+        font-size: 28px;
+    }
+    .community_img {
+        display: none;
+    }
+    .community_img1 {
+        display: none;
+    }
+    .community_img2 {
+        display: none;
+        position: relative;
+    }
+    .community_img0 {
+        display: block;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .community_img0 img {
+        width: 100%;
+        max-width: 415px;
+        display: block;
+    }
+    .community_img3 {
+        margin: 10px 0;
+        display: block;
+    }
+    .community_img4 {
+        display: block;
+    }
 }
 
-/* servicearea */
+/* <!-- ------------------- BUTCHER AC SERVICE AREA --> */
 
 .servicearea {
     display: flex;
@@ -576,17 +729,21 @@ video {
     width: 100%;
     background: #AEDBFF;
 }
+.servicearea_title {
+    position: relative;
+    padding: 20px 20px 20px 660px ;
+    text-align: left;
+    background: var(--primary__color);
+    color: var(--tertiary__color);
+}
 .servicearea_in {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-}
-.servicearea_title {
-    padding: 20px;
-    text-align: center;
-    background: var(--primary__color);
-    color: var(--tertiary__color);
+    position: relative;
+    gap: 50px;
 }
 .servicearea_title2 {
     padding: 10px;
@@ -599,14 +756,24 @@ video {
     font-size: 35px;
 }
 .servicearea_title p {
-    text-align: center;
     font-weight: lighter;
+}
+.servicearea_img {
+    position: absolute;
+    top: -70px;
+    left: 100px;
+}
+.servicearea_img img{
+    width: 100%;
+    max-width: 500px;
 }
 .servicearea_card {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 50px;
+    margin: 100px 100px 100px 600px;
 }
 .servicearea_card ul {
     list-style: none;
@@ -622,10 +789,16 @@ video {
 .servicearea_list {
     display: flex;
     flex-direction: column;
+    font-size: 19px;
     gap: 10px;
 }
+@media screen and (max-width: 600px) {
+    .servicearea {
+        display: none;
+    }
+}
 
-/* servicebrief */
+/* <-- ------------------ Service Brief --> */
 
 .servicebrief {
     display: flex;
@@ -645,33 +818,66 @@ video {
 .servicebrief_card {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 100%;
+    background: var(--octonary__color);
+    position: relative;
+}
+.servicebrief_card2 {
+    display: flex;
+    position: relative;
+    float: right;
+    right: 0;
+    /* padding-left: 150px; */
 }
 .servicebrief_card img {
-    width: 50%;
+    width: 100%;
+    max-width: 700px;
+}
+.servicebrief_card p{
+    width: 70%;
 }
 .servicebrief_content {
-    width: 50%;
-    padding: 50px;
+    width: 45%;
+    height: 100%;
+    padding: 75px;
+    margin: 0;
+    background: url(../img/service_bg.webp) no-repeat !important;
+    background-size: 100% !important;
+}
+.servicebrief_content2 {
+    width: 45%;
+    height: 100%;
+    padding: 64px;
+    margin: 0;
+    background: url(../img/service_bg_2.webp) no-repeat !important;
+    background-size: cover !important;
 }
 .servicebrief_content h4 {
     margin-bottom: 10px;
 }
 
-/* footer */
+@media screen and (max-width: 600px) {
+    .servicebrief {
+        display: none;
+    }
+}
+
+/* ---------------------------------- footer */
 
 .footer {
-    display: flex;
-    flex-direction: column;
     position: relative;
     width: 100%;
+    max-width: 100%;
     font-family: var(--secondary__font);
+    margin: 0;
 }
 .footer_in {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
 }
 .footer_card {
@@ -743,6 +949,8 @@ video {
 .footer_contact .list1 {
     background: var(--secondary__color);
     border-radius: 0 0 0 50px;
+    align-items: center;
+    display: flex;
 }
 .footer_contact .list2 {
     background: var(--primary__color);
@@ -751,24 +959,73 @@ video {
     background: var(--senary__color);
     border-radius: 0 0 20px 0;
 }
+.footer_logos {
+    display: flex;
+    flex-direction: column;
+}
+.footer_logos2 {
+    display: flex;
+    gap: 20px;
+}
 
 @media screen and (max-width: 600px) {
+    .footer {
+        display: flex;
+    }
     .footer_contact {
-        position: relative;
-        z-index: 0;
+        display: none;
     } 
-    .contact_menu {
+    .footer_in {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        width: 100%;
-        position: relative;
-        float: none;
-        right: 0;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 0 0;
     }
-    .contact_list {
-        padding: 20px 30px;
+    .footer_card {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 40px 0;
+    }
+    hr {
+        display: none;
+    }
+    .footer_card .footer_brandlogo {
+        margin: 0;
+        width: 300px;
+        height: 100px;
+    }
+    .footer_card2 {
+        display: flex;
+        position: relative;
+    }
+    .footer_card2 h4 {
+        font-family: var(--tertiary__font);
+        font-style: italic;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .footer_carimg {
+        max-width: 415px;
         width: 100%;
-        border-radius: 0;
+    }
+    .footer_logos2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_logos .logo1 {
+        width: 250px;
+        height: 80px;
+    }
+    .footer_logos .logo2 {
+        width: 100px;
+        height: 120px;
+    }
+    .footer_logos .logo3 {
+        width: 250px;
+        height: 80px;
     }
 }

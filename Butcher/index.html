@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
 </head>
 <body>
+
+<!-- ----------------------------------------------- Navbar -->
+
     <header class="nav">
         <img class="logo" data-src="./assets/img/butcher_logo.webp" width="200" alt="logo" decoding="async" src="./assets/img/butcher_logo.png" data-loaded="true">
         <i class="fa-solid fa-bars nav_burger" onclick="navmenu()"></i>
@@ -28,11 +31,15 @@
     </header>
     <nav class="contact">
         <div class="contact_menu">
-            <a class="contact_list list1" href="tell:+(337)2433376"><span><i class="fa-solid fa-square-phone"></i> Call 24/7 </span>+(337)2433376</a>
+            <a class="contact_list list1" href="tell:+(337)2433376">
+                <img class="logo" data-src="./assets/img/call_icon.webp" width="15" alt="logo" decoding="async" src="./assets/img/call_icon.webp" data-loaded="true">&nbsp;&nbsp;
+                <span></i> Call 24/7 </span>+(337)2433376</a>
             <a class="contact_list list2" href="#">FREE QUOTE</a>
             <a class="contact_list list3" href="#">Online Bill Pay</a>
         </div>
     </nav>
+
+<!-- ----------------------------------------------- Hero -->
 
     <main class="hero">
         <video autoplay loop muted >
@@ -41,52 +48,57 @@
         <div class="hero_overlay">
             <div class="hero_content hero_box">
                 <div class="hero_textbox">
-                    <h1 class="hero_text">“Serving Acadiana Since 1949”</h1>
+                    <h1 class="hero_text">“Serving Acadiana <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since 1949”</h1>
                     <div class="hero_textbox2">
-                        <h1><span></span>AC Repair</h1>
+                        <h1><span><img class="logo" data-src="./assets/img/ac_repair_logo.webp" width="50" alt="logo" decoding="async" src="./assets/img/ac_repair_logo.webp" data-loaded="true">&nbsp;</span>AC Repair</h1>
                         <h3>24/7 Emergency Support</h3>
-                        <a href="tell:(337)2433376"><h1><span><i class="fa-solid fa-square-phone"></i></span> (337) 243.3376</h1></a>
+                        <a class="hero_number" href="tell:(337)2433376"><img class="logo" data-src="./assets/img/call_icon.webp" width="35" alt="logo" decoding="async" src="./assets/img/call_icon.webp" data-loaded="true">&nbsp;<h1> (337) 243.3376</h1></a>
                     </div>
                 </div>
             </div>
             <div class="hero_content2 hero_box">
                 <div class="hero_textbox3">
                     <h1>0%</h1>
-                    <h3>APR FINANCING<br>
-                        FOR 60 MONTHS</h3>
-                    <h4>OR</h4>
+                    <h3><span>APR FINANCING<br>
+                        FOR</span> 60 MONTHS</h3>
+                    <h3 class="OR">OR</h3>
                     <h1>$1200</h1>
                     <h3>INSTANT<br>
                         REBATE</h3>
                     <hr>
-                    <p>LEARN MORE</p>
+                    <a class="button" href="#">LEARN MORE</a>
                 </div>
             </div>
         </div>
     </main>
-    
+
+<!-- ----------------------------------------------- services -->
+
     <section class="services">
         <div class="service_box"></div>
         <div class="services_in">
             <div class="services_card">
-                <img class="logo" data-src="./assets/img/ac_repair.webp" width="400" alt="AC Repair" decoding="async" src="./assets/img/ac_repair.png" data-loaded="true">
+                <img class="logo" data-src="./assets/img/ac_repair.webp" alt="AC Repair" decoding="async" src="./assets/img/ac_repair.png" data-loaded="true">
                 <h4>AC Repair</h4>
             </div>
             <div class="services_card">
-                <img class="logo" data-src="./assets/img/insulation.webp" width="400" alt="logo" decoding="async" src="./assets/img/insulation.png" data-loaded="true">
+                <img class="logo" data-src="./assets/img/insulation.webp" alt="logo" decoding="async" src="./assets/img/insulation.png" data-loaded="true">
                 <h4>Insulation</h4>
             </div>
             <div class="services_card">
-                <img class="logo" data-src="./assets/img/maintenance_agreement.webp" width="400" alt="logo" decoding="async" src="./assets/img/maintenance_agreement.png" data-loaded="true">
+                <img class="logo" data-src="./assets/img/maintenance_agreement.webp" alt="logo" decoding="async" src="./assets/img/maintenance_agreement.png" data-loaded="true">
                 <h4>Maintenance Agreement</h4>
             </div>
         </div>
     </section>
+
+<!-- ----------------------------------------------- About us -->
     
     <section class="aboutus">
         <div class="aboutus_in">
             <div class="aboutus_img">
-                <img data-src="./assets/img/aboutus.webp" width="800" alt="About Us" decoding="async" src="./assets/img/aboutus.png" data-loaded="true">
+                <img data-src="./assets/img/about_bgimg.webp" width="800" alt="About Us" decoding="async" src="./assets/img/about_bgimg.webp" data-loaded="true">
+                <img class="aboutus_overimg" data-src="./assets/img/about_img.webp" width="800" alt="About Us" decoding="async" src="./assets/img/about_img.webp" data-loaded="true">
             </div>
             <div class="aboutus_cards">
                 <div class="aboutus_card1">
@@ -94,14 +106,15 @@
                     <p><span><strong>Butcher Air Conditioning is the #1 Trane Dealer in Louisiana</strong></span> and has been catering to Acadiana and the surrounding area for over 74 Years. We are dedicated to providing superior Air Conditioning Service & Heating Service, Air Conditioner & Heater Repair, Preventative Maintenance, Central Air Conditioning & Heating, HVAC replacements, Generators, Air Purifiers, Duct Work replacement, Foam Insulation and Fiber Insulation.</p>                    
                 </div>
                 <div class="aboutus_card2">
-                    <img class="logo" data-src="./assets/img/butcher_logo.webp" width="200" alt="logo" decoding="async" src="./assets/img/butcher_logo.webp" data-loaded="true">
                     <h4>Watch our<br>latest commercial ></h4>
+                    <img class="aboutus_tv_mobile" data-src="./assets/img/about_tv_mobile.webp" width="800" alt="About Us" decoding="async" src="./assets/img/about_tv_mobile.webp" data-loaded="true">
                 </div>
-                <img class="aboutus_tv" data-src="./assets/img/aboutustv.webp" width="300" alt="About us" decoding="async" src="./assets/img/aboutustv.webp" data-loaded="true">
+                <img class="aboutus_tv" data-src="./assets/img/about_tv.webp" width="750" alt="About us" decoding="async" src="./assets/img/about_tv.webp" data-loaded="true">
             </div>
         </div>
     </section>
 
+<!-- ----------------------------------------------- CUSTOMER REVIEWS -->
 
     <section class="review">
         <h1 class="review_title">CUSTOMER REVIEWS</h1>
@@ -210,23 +223,24 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
+
+<!-- ------------------------------------------ BUTCHER IN THE COMMUNITY -->
     
     <section class="community">
         <h1 class="community_title">BUTCHER IN THE COMMUNITY</h1>
         <div class="community_in">
             <div class="community_img">
-                <img data-src="./assets/img/community.webp" width="600" alt="About Us" decoding="async" src="./assets/img/community.png" data-loaded="true">
+                <img class="community_img1" data-src="./assets/img/community_photos.webp" alt="About Us" decoding="async" src="./assets/img/community_photos.webp" data-loaded="true">
+                <img class="community_img2" data-src="./assets/img/community_history.webp" alt="About Us" decoding="async" src="./assets/img/community_history.webp" data-loaded="true">
             </div>
-            <div class="community_card1">
-                <p><strong>Butcher Air Conditioning</strong> has supported the Acadiana area for over 75 years, and we continue to do so.</p>
-                <img class="community_tv" data-src="./assets/img/community_car.webp" width="450" height="400" alt="About us" decoding="async" src="./assets/img/community_car.png" data-loaded="true">
-            </div>
-            <div class="community_card2">
-                <p class="community_p1 community_text">VISIT OUR <br>PHOTO GALLERY</p>
-                <p class="community_p2 community_text">VISIT OUR <br>HISTORY PAGE</p>
+            <div class="community_img0">
+                <img class="community_img3" data-src="./assets/img/community_photo_mob.webp" alt="About Us" decoding="async" src="./assets/img/community_photo_mob.webp" data-loaded="true">
+                <img class="community_img4" data-src="./assets/img/community_histo_mob.webp" alt="About Us" decoding="async" src="./assets/img/community_histo_mob.webp" data-loaded="true">
             </div>
         </div>
     </section>
+
+<!-- ------------------------------------------- BUTCHER AC SERVICE AREA -->
     
     <section class="servicearea">
         <div class="servicearea_title">
@@ -236,7 +250,7 @@
         <div class="servicearea_in">
             <div class="servicearea_img">
                 <h4 class="servicearea_title2">LOUISIANA</h4>
-                <img data-src="./assets/img/louisiana.webp" width="600" alt="About Us" decoding="async" src="./assets/img/louisiana.png" data-loaded="true">
+                <img data-src="./assets/img/louisiana.webp" width="600" alt="About Us" decoding="async" src="./assets/img/louisiana.webp" data-loaded="true">
             </div>
             <div class="servicearea_card">
                 <ul class="servicearea_list">
@@ -272,26 +286,28 @@
         </div>
     </section>
 
+<!-- --------------------------------------- Service Brief -->
+
     <section class="servicebrief">
         <div class="servicebrief_in">
             <div class="servicebrief_card">
-                <img class="logo" data-src="./assets/img/ac_repair_1.webp" width="500" alt="AC Repair" decoding="async" src="./assets/img/ac_repair_1.webp" data-loaded="true">
+                <img class="logo" data-src="./assets/img/ac_repair_1.webp" alt="AC Repair" decoding="async" src="./assets/img/ac_repair_1.webp" data-loaded="true">
                 <div class="servicebrief_content">
                     <h4>AC Repair</h4>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis.</p>
                     <input class="btn" type="button" value="Know More">
                 </div>
             </div>
-            <div class="servicebrief_card">
-                <div class="servicebrief_content">
+            <div class="servicebrief_card servicebrief_card2">
+                <div class="servicebrief_content2">
                     <h4>Insulation</h4>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis.</p>
                     <input class="btn" type="button" value="Know More">
                 </div>
-                <img class="logo" data-src="./assets/img/insulation_2.webp" width="400" alt="logo" decoding="async" src="./assets/img/insulation_2.webp" data-loaded="true">
+                <img class="logo" data-src="./assets/img/insulation_2.webp" alt="logo" decoding="async" src="./assets/img/insulation_2.webp" data-loaded="true">
             </div>
             <div class="servicebrief_card">
-                <img class="logo" data-src="./assets/img/maintenanceagr.webp" width="400" alt="logo" decoding="async" src="./assets/img/maintenanceagr.webp" data-loaded="true">
+                <img class="logo" data-src="./assets/img/maintenanceagr.webp" alt="logo" decoding="async" src="./assets/img/maintenanceagr.webp" data-loaded="true">
                 <div class="servicebrief_content">
                     <h4>Maintenance Agreement</h4>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis.</p>
@@ -300,28 +316,32 @@
             </div>
         </div>
     </section>
-    
+
+<!-- --------------------------------------- Footer -->
     <footer class="footer">
         <nav class="footer_contact">
             <div class="footer_contact_menu">
-                <a class="footer_contact_list list1" href="tell:+(337)2433376"><span><i class="fa-solid fa-square-phone"></i> Call 24/7 </span>+(337)2433376</a>
+                <a class="footer_contact_list list1" href="tell:+(337)2433376"><img class="logo" data-src="./assets/img/call_icon.webp" width="15" alt="logo" decoding="async" src="./assets/img/call_icon.webp" data-loaded="true">&nbsp;&nbsp;
+                    <span></i> Call 24/7 </span>+(337)2433376</a>
                 <a class="footer_contact_list list2" href="#">FREE QUOTE</a>
                 <a class="footer_contact_list list3" href="#">Online Bill Pay</a>
             </div>
         </nav>
         <div class="footer_in">
             <div class="footer_card">
-                <img class="footer_brandlogo" data-src="./assets/img/butcher_logo.webp" width="200" alt="AC Repair" decoding="async" src="./assets/img/butcher_logo.png" data-loaded="true">
+                <img class="footer_brandlogo" data-src="./assets/img/butcher_logo.webp" width="300" height="100" alt="AC Repair" decoding="async" src="./assets/img/butcher_logo.webp" data-loaded="true">
                 <hr>
                 <div class="footer_logos">
-                    <img class="logo" data-src="./assets/img/logo_1.webp" width="100" height="40" alt="AC Repair" decoding="async" src="./assets/img/logo_1.webp" data-loaded="true">
-                    <img class="logo" data-src="./assets/img/logo_2.webp" width="50" height="60" alt="AC Repair" decoding="async" src="./assets/img/logo_2.webp" data-loaded="true">
-                    <img class="logo" data-src="./assets/img/logo_3.webp" width="100" height="40" alt="AC Repair" decoding="async" src="./assets/img/logo_3.webp" data-loaded="true">
+                    <img class="logo1" data-src="./assets/img/logo_1.webp" width="100" height="40" alt="AC Repair" decoding="async" src="./assets/img/logo_1.webp" data-loaded="true">
+                    <div class="footer_logos2">
+                        <img class="logo2" data-src="./assets/img/logo_2.webp" width="50" height="60" alt="AC Repair" decoding="async" src="./assets/img/logo_2.webp" data-loaded="true">
+                        <img class="logo3" data-src="./assets/img/logo_3.webp" width="100" height="40" alt="AC Repair" decoding="async" src="./assets/img/logo_3.webp" data-loaded="true">    
+                    </div>
                 </div>
             </div>
             <div class="footer_card2">
                 <h4>“Serving Acadiana<br>Since 1949”</h4>
-                <img class="logo" data-src="./assets/img/footer_car.webp" width="700" alt="logo" decoding="async" src="./assets/img/footer_car.webp" data-loaded="true">
+                <img class="footer_carimg" data-src="./assets/img/footer_car.webp" width="700" alt="logo" decoding="async" src="./assets/img/footer_car.webp" data-loaded="true">
             </div>
         </div>
     </footer>
