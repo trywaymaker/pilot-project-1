@@ -7,7 +7,7 @@
     <title>BUTCHER</title>
 
     <!-- swiper css -->
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Style -->
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
@@ -18,8 +18,8 @@
 
     <header class="nav">
         <img class="logo" data-src="./assets/img/butcher_logo.webp" width="200" alt="logo" decoding="async" src="./assets/img/butcher_logo.png" data-loaded="true">
-        <i class="fa-solid fa-bars nav_burger" onclick="navmenu()"></i>
-        <nav class="nav_menu" id="navMenu">
+        <i class="fa-solid fa-bars nav_burger" onclick="navMenu()"></i>
+        <nav class="nav_menuitems" id="menuitems">
             <a class="nav_list" href="#">HOME</a>
             <a class="nav_list" href="#">ABOUT US</a>
             <a class="nav_list" href="#">AIR CONDITIONING</a>
@@ -48,7 +48,7 @@
         <div class="hero_overlay">
             <div class="hero_content hero_box">
                 <div class="hero_textbox">
-                    <h1 class="hero_text">“Serving Acadiana <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since 1949”</h1>
+                    <h1 class="hero_title">“Serving Acadiana <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since 1949”</h1>
                     <div class="hero_textbox2">
                         <h1><span><img class="logo" data-src="./assets/img/ac_repair_logo.webp" width="50" alt="logo" decoding="async" src="./assets/img/ac_repair_logo.webp" data-loaded="true">&nbsp;</span>AC Repair</h1>
                         <h3>24/7 Emergency Support</h3>
@@ -116,7 +116,44 @@
 
 <!-- ----------------------------------------------- CUSTOMER REVIEWS -->
 
-    <section class="review">
+<section class="review">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-001.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-002.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-003.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-004.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-005.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-006.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-007.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-008.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.magloft.com/github/swiper/images/page-009.jpg" />
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+    <!-- <section class="review">
         <h1 class="review_title">CUSTOMER REVIEWS</h1>
         <div #swiperRef="" class="slide-container swiper">
             <div class="slide-content">
@@ -222,7 +259,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-    </section>
+    </section> -->
 
 <!-- ------------------------------------------ BUTCHER IN THE COMMUNITY -->
     
@@ -318,6 +355,7 @@
     </section>
 
 <!-- --------------------------------------- Footer -->
+
     <footer class="footer">
         <nav class="footer_contact">
             <div class="footer_contact_menu">
@@ -353,5 +391,5 @@
 <!-- font awsome -->
     <script src="https://kit.fontawesome.com/f9a681a093.js" crossorigin="anonymous"></script>
 <!-- swiper js -->
-    <script src="./assets/script/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </html>
