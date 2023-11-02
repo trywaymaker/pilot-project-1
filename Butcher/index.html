@@ -17,20 +17,46 @@
 
 <!-- ----------------------------------------------- Navbar -->
 
-    <header class="nav">
-        <img class="logo" data-src="./assets/img/butcher_logo.webp" width="200" alt="logo" decoding="async" src="./assets/img/butcher_logo.png" data-loaded="true">
-        <i class="fa-solid fa-bars nav_burger" onclick="navMenu()"></i>
-        <nav class="nav_menuitems" id="menuitems">
-            <a class="nav_list" href="#">HOME</a>
-            <a class="nav_list" href="#">ABOUT US</a>
-            <a class="nav_list" href="#">AIR CONDITIONING</a>
-            <a class="nav_list" href="#">HEATING</a>
-            <a class="nav_list" href="#">FINANCING</a>
-            <a class="nav_list" href="#">CAREERS</a>
-            <a class="nav_list" href="#">CONTACT</a>
+    <header>
+        <nav class="nav">
+            <img class="brand_logo" data-src="./assets/img/butcher_logo.webp" alt="BUTCHER" decoding="async" src="./assets/img/butcher_logo.png" data-loaded="true">
+            <i class="fa-solid fa-bars nav_burger" onclick="navMenu()"></i>
+            <ul class="nav_items" id="menuitems">
+                <li class="nav_list nav_list1"><a href="#">HOME</a></li>
+                <li class="nav_list nav_list2">
+                    <a href="#">ABOUT US <i class="fa fa-caret-down nav_down"></i></a>
+                    <ul class="nav_dropdown">
+                        <li class="nav_list"><a href="#">Testimonials</a></li>
+                        <li class="nav_list"><a href="#">History</a></li>
+                        <li class="nav_list"><a href="#">Photo Gallery</a></li>
+                        <li class="nav_list"><a href="#">Blog</a></li>
+                        <li class="nav_list"><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list nav_list3">
+                    <a href="#">AIR CONDITIONING <i class="fa fa-caret-down nav_down"></i></a>
+                    <ul class="nav_dropdown">
+                        <li class="nav_list"><a href="#">AC Repair</a></li>
+                        <li class="nav_list"><a href="#">AC Installation</a></li>
+                        <li class="nav_list"><a href="#">AC Maintenance</a></li>
+                        <li class="nav_list"><a href="#">Ductless AC Services</a></li>
+                    </ul>
+                </li>
+                <li class="nav_list nav_list4">
+                    <a href="#">HEATING <i class="fa fa-caret-down nav_down"></i></a>
+                    <ul class="nav_dropdown">
+                        <li class="nav_list"><a href="#">Heating Repair</a></li>
+                        <li class="nav_list"><a href="#">Heating Installation</a></li>
+                        <li class="nav_list"><a href="#">Heating Maintenance Agreement </a></li>
+                    </ul>
+                </li>
+                <li class="nav_list nav_list5"><a href="#">FINANCING</a></li>
+                <li class="nav_list nav_list6"><a href="#">CAREERS</a></li>
+                <li class="nav_list nav_list7"><a href="#">CONTACT</a></li>
+            </ul>
         </nav>
     </header>
-    <nav class="contact">
+    <div class="contact">
         <div class="contact_menu">
             <a class="contact_list list1" href="tell:+(337)2433376">
                 <img class="logo" data-src="./assets/img/call_icon.webp" width="15" alt="logo" decoding="async" src="./assets/img/call_icon.webp" data-loaded="true">&nbsp;&nbsp;
@@ -38,7 +64,7 @@
             <a class="contact_list list2" href="#">FREE QUOTE</a>
             <a class="contact_list list3" href="#">Online Bill Pay</a>
         </div>
-    </nav>
+    </div>
 
 <!-- ----------------------------------------------- Hero -->
 
@@ -104,7 +130,8 @@
             <div class="aboutus_cards">
                 <div class="aboutus_card1">
                     <h1>About Us</h1>
-                    <p><span><strong>Butcher Air Conditioning is the #1 Trane Dealer in Louisiana</strong></span> and has been catering to Acadiana and the surrounding area for over 74 Years. We are dedicated to providing superior Air Conditioning Service & Heating Service, Air Conditioner & Heater Repair, Preventative Maintenance, Central Air Conditioning & Heating, HVAC replacements, Generators, Air Purifiers, Duct Work replacement, Foam Insulation and Fiber Insulation.</p>                    
+                    <p><span><strong>Butcher Air Conditioning is the #1 Trane Dealer in Louisiana</strong></span> and has been catering to Acadiana and the surrounding area for over 74 Years. We are dedicated to providing superior Air Conditioning Service & Heating Service, Air Conditioner & Heater Repair, Preventative Maintenance, Central Air Conditioning & Heating, HVAC replacements, Generators, Air Purifiers, Duct Work replacement, Foam Insulation and Fiber Insulation.</p>
+                    <a href="#">Read More...</a>
                 </div>
                 <div class="aboutus_card2">
                     <h4>Watch our<br>latest commercial ></h4>
@@ -117,43 +144,6 @@
 
 <!-- ----------------------------------------------- CUSTOMER REVIEWS -->
 
-<section class="review">
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="https://cdn.magloft.com/github/swiper/images/page-001.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://cdn.magloft.com/github/swiper/images/page-002.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://cdn.magloft.com/github/swiper/images/page-003.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://cdn.magloft.com/github/swiper/images/page-004.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://cdn.magloft.com/github/swiper/images/page-005.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://cdn.magloft.com/github/swiper/images/page-006.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://cdn.magloft.com/github/swiper/images/page-007.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://cdn.magloft.com/github/swiper/images/page-008.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://cdn.magloft.com/github/swiper/images/page-009.jpg" />
-            </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-scrollbar"></div>
-        <div class="swiper-pagination"></div>
-    </div>
-</section>
     <!-- <section class="review">
         <h1 class="review_title">CUSTOMER REVIEWS</h1>
         <div #swiperRef="" class="slide-container swiper">
@@ -384,7 +374,6 @@
             </div>
         </div>
     </footer>
-    
     
 </body>
 <!-- Javascript -->
