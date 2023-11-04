@@ -697,6 +697,7 @@ sup {
     max-width: 1200px;
     height: 100%;
     padding: 50px 0;
+    position: relative;
   }
 
   .swiper-slide {
@@ -714,13 +715,27 @@ sup {
     text-align: center;
     font-size: 18px;
   }
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    z-index: 10;
+}
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 10;
+  }
 
   @media only screen and (min-width: 769px) {
     .swiper-slide {
         width: 100%;
         max-width: 300px;
     }
-    /* .swiper-slide:first-child {
+    .swiper-slide:first-child {
       transition: transform 100ms;
     }
 
@@ -748,7 +763,7 @@ sup {
 
     .swiper[dir="rtl"] .swiper-slide.swiper-slide-next:nth-child(2) {
       transform: translateX(-55%);
-    }*/
+    }
   }
 /* ------------------ */
 

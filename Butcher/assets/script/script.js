@@ -18,7 +18,7 @@ var swiper = new Swiper(".mySwiper", {
   observeParents: true,
   slidesPerView: 1,
   slidesPerGroupSkip: 3,
-  centeredSlides: false,
+  centeredSlides: true,
   centerSlide: true,
   grabCursor: true,
   spaceBetween: 30,
@@ -39,8 +39,8 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".next",
+    prevEl: ".prev",
   },
 });
 swiper.update();
