@@ -13,29 +13,75 @@ function navMenu() {
 
 // carousal
 
-// var swiper = new Swiper(".swiper", {
-//   observer: true,
-//   observeParents: true,
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   loop: true,
-//   centerSlide: true,
-//   fade: true,
-//   grabCursor: true,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   breakpoint: {
-//     1280: {
-//       slidesPerView: 3,
-//     },
-//     769:{
-//       slidesPerView: 2,
-//     },
-//     600:{
-//       slidesPerView: 1,
-//     }
-//   }
-// });
-// swiper.update();
+var swiper = new Swiper(".mySwiper", {
+  observer: true,
+  observeParents: true,
+  slidesPerView: 3,
+  slidesPerGroupSkip: 3,
+  centeredSlides: false,
+  // centerSlide: false,
+  grabCursor: true,
+  spaceBetween: 50,
+  loop: false,
+  fade: true,
+  keyboard: {
+    enabled: true,
+  },
+  breakpoints: {
+    1280: {
+      slidesPerView: 3,
+    },
+    769:{
+      slidesPerView: 1,
+    },
+    600:{
+      slidesPerView: 1,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+swiper.update();
+
+
+// animation
+
+$(document).ready(function(){
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+  });
+
+  $('#jingle').click(function(){
+      $(this).toggleClass("expand");
+      tooltipList.forEach((el) => {
+          el.hide();
+      });
+  });
+
+  function elementScrolled(elem) {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+      var elemTop = $(elem).offset().top;
+      return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+  }
+
+  $(window).scroll(function(){
+      if(elementScrolled('.aboutus')) {
+          $('.aboutus').addClass('visible');
+      }
+      if(elementScrolled('.community')) {
+          $('.community').addClass('visible');
+      }
+      $('.servicebrief .servicebrief_card').each(function(){
+          if(elementScrolled($(this))) {
+              $(this).addClass('visible');
+          }
+      });
+      if(elementScrolled('footer')) {
+          $('footer').addClass('visible');
+      }
+  });
+});
