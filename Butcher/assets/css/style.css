@@ -719,14 +719,14 @@ sup {
     cursor: pointer;
     position: absolute;
     top: 65px;
-    right: 0;
+    right: 0px;
     z-index: 10;
 }
 .prev {
     cursor: pointer;
     position: absolute;
     top: 65px;
-    left: 0;
+    left: 0px;
     z-index: 10;
   }
 
