@@ -443,8 +443,8 @@ sup {
         width: 100%;
         display: flex;
         position: relative;
-        background: url(../img/hero_bg_mobile.webp) top 5px left 0 no-repeat !important;
-        background-size: 390px !important;
+        background: url(../img/hero_bg_mobile.webp) top 25px left 0 no-repeat !important;
+        background-size: 350px !important;
         text-align: center;
     }
     .hero_textbox3 {
