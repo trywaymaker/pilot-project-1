@@ -342,7 +342,7 @@ video {
 .hero_textbox {
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 100px;
     margin: inherit;
 }
 
