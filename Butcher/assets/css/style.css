@@ -209,6 +209,55 @@ header .nav .nav_list .nav_down {
 
 
 
+/* ------------------------------- Jingle */
+
+#jingle {
+    position: fixed; 
+    right: -420px; 
+    top: 190px; 
+    z-index: 999; 
+    display: flex; 
+    align-items: flex-start;  
+    transition: .5s right;
+}
+#jingle.expand {
+    right: 0; 
+    transition: .5s right;
+}
+#jingle button {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+    padding: 15px 10px; 
+    border-radius: 20px 0 0 20px;
+    border: none;
+    background: var(--secondary__color);
+    margin-top: 50px;
+}
+#jingle .truck div {
+    width: 420px; 
+    height: 164px; 
+    position: relative;
+}
+#jingle .truck div:first-child {
+    border-top-left-radius: 20px;
+}
+#jingle .truck div:last-child {
+    border-bottom-left-radius: 20px;
+}
+#jingle .truck div img {
+    position: absolute; 
+    top: -45px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+#jingle .truck div.tagline {
+    color: var(--colorRed); 
+    font-size: 2em; 
+    padding: 15px 40px;
+}
+
 /* ------------------------------- sticky contact */
 
 .contact {
@@ -361,7 +410,7 @@ video {
     height: 100%; 
     position: absolute;
     top: -37px;
-    left: 60px;
+    left: 0px;
     background: url('../img/rectangle-out-bg.png') no-repeat center center;
 }
 .hero_content2 {
@@ -376,7 +425,7 @@ video {
     height: 100%; 
     width: 48%; 
     z-index: 12; 
-    padding: 10px 50px 10px 12%; 
+    padding: 5% 12%; 
     display: flex; 
     flex-direction: column; 
     text-align: center;
@@ -907,11 +956,16 @@ sup {
 }
 .servicearea_title {
     position: relative;
-    padding: 20px 20px 20px 660px ;
+    padding: 20px 20px;
     text-align: left;
     background: var(--primary__color);
     color: var(--tertiary__color);
 }
+.servicearea_titlebox {
+    position: relative;
+    float: right;
+    padding-right: 200px;
+} 
 .servicearea_in {
     display: flex;
     flex-direction: row;
@@ -919,7 +973,6 @@ sup {
     align-items: center;
     width: 100%;
     position: relative;
-    gap: 50px;
 }
 .servicearea_title2 {
     padding: 10px;
@@ -935,13 +988,8 @@ sup {
     font-weight: lighter;
 }
 .servicearea_img {
-    position: absolute;
+    position: relative;
     top: -70px;
-    left: 100px;
-}
-.servicearea_img img{
-    width: 100%;
-    max-width: 500px;
 }
 .servicearea_card {
     display: flex;
@@ -949,7 +997,7 @@ sup {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    margin: 100px 100px 100px 600px;
+    /* margin: 100px 100px 100px 600px; */
 }
 .servicearea_card ul {
     list-style: none;
@@ -1013,7 +1061,7 @@ sup {
     position: relative;
     width: 90%;
     height: 100%;
-    padding: 80px;
+    padding: 10%;
     margin: 0;
     background: var(--tertiary__color);
     border-radius: 0 200px 200px 0;
@@ -1024,7 +1072,7 @@ sup {
     right: -72px;
     width: 90%;
     height: 100%;
-    padding: 80px;
+    padding: 10%;
     margin: 0;
     background: var(--tertiary__color);
     border-radius: 200px 0 0 200px;
