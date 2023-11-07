@@ -14,14 +14,14 @@ function navMenu() {
 // carousal
 
 var swiper = new Swiper(".mySwiper", {
-  observer: true,
-  observeParents: true,
-  slidesPerView: 1,
+  // observer: true,
+  // observeParents: true,
+  slidesPerView: 3,
   slidesPerGroupSkip: 3,
   centeredSlides: true,
   centerSlide: true,
   grabCursor: true,
-  spaceBetween: 30,
+  spaceBetween: 50,
   loop: true,
   fade: true,
   keyboard: {
@@ -31,19 +31,16 @@ var swiper = new Swiper(".mySwiper", {
     1280: {
       slidesPerView: 3,
     },
-    769:{
+    992:{
       slidesPerView: 1,
-    },
-    600:{
-      slidesPerView: 1,
-    },
+    }
   },
   navigation: {
     nextEl: ".next",
     prevEl: ".prev",
   },
 });
-swiper.update();
+// swiper.update();
 
 
 // animation
@@ -59,4 +56,4 @@ $(document).ready(function(){
       tooltipList.forEach((el) => {
           el.hide();
       });
-  })};
+  })});

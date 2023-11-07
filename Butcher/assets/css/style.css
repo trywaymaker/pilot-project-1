@@ -93,7 +93,7 @@ header .nav {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 100px;
+    gap: 5%;
     padding: 30px 5%;
     position: relative;
 }
@@ -150,7 +150,13 @@ header .nav .nav_list .nav_down {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
+    header .nav {
+        gap: 30px;
+    }
+
+}
+@media screen and (max-width: 992px) {
 
     header .nav {
         padding: 20px 5%;
@@ -300,7 +306,7 @@ header .nav .nav_list .nav_down {
     border-radius: 0 0 20px 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
     .contact {
         position: relative;
         z-index: 0;
@@ -403,8 +409,9 @@ video {
     display: flex;
     align-items: center;
 }
-.hero .hero_overlay .hero_content2 .or:before {
+.or:before {
     content:""; 
+    z-index: -1;
     display: block; 
     width: 100%; 
     height: 100%; 
@@ -476,7 +483,7 @@ sup {
     font-size: smaller;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .hero {
         width: 100%;
         height: 100%;
@@ -573,7 +580,7 @@ sup {
     color: var(--tertiary__color);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .services_in {
         gap: 10px;
         top: 50px;
@@ -610,14 +617,14 @@ sup {
     left: 0;
 }
 .aboutus_img .aboutus_bgimg {
-    width: 100%;
+    width: 90%;
     position: relative;
     top: 0;
     left: 0;
     z-index: 8;
 }
 .aboutus_img .aboutus_overimg {
-    width: 100%;
+    width: 90%;
     position: absolute;
     top: 0;
     left: 0;
@@ -641,7 +648,7 @@ sup {
     float: right;
     background: var(--septenary__color);
     padding: 50px 100px 50px 120px;
-    margin-left: -100px;
+    margin-left: -130px;
 }
 .aboutus_card1 h1 {
     font-family: var(--secondary__font);
@@ -661,23 +668,24 @@ sup {
 .aboutus_card2 {
     display: flex;
     flex-direction: column;
-    margin: 100px 0 10px 0px;
+    margin: 20px 0 10px 0px;
 }
 .aboutus_card2 h4{
     color: var(--tertiary__color);
-    padding: 20px 20px 20px 30px;
+    padding: 20px 20px 20px 0px;
     width: 50%;
     font-size: 28px;
     font-family: var(--secondary__font);
 }
 .aboutus_tv {
     position: absolute;
-    right: 30px;
+    width: 100%;
+    left: -120px;
     bottom: -80px;
     z-index: -1;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .aboutus {
         margin: 100px 0 50px 0;
         position: relative;
@@ -790,7 +798,7 @@ sup {
     z-index: 10;
   }
 
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 992px) {
     .swiper-slide {
         width: 100%;
         max-width: 300px;
@@ -909,7 +917,7 @@ sup {
 .community_img4 {
     display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .community {
         background: var(--octonary__color);
     }
@@ -1016,7 +1024,7 @@ sup {
     font-size: 19px;
     gap: 10px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .servicearea {
         display: none;
     }
@@ -1092,7 +1100,7 @@ sup {
     width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .servicebrief {
         display: none;
     }
@@ -1203,7 +1211,7 @@ sup {
     gap: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .footer {
         display: flex;
     }
